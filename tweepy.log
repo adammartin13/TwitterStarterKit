@@ -1,0 +1,16 @@
+PARAMS: {'q': 'Ukraine'}
+PARAMS: {'q': 'Ukraine'}
+PARAMS: {'q': 'Ukraine'}
+PARAMS: {'q': 'Ukraine'}
+PARAMS: {'q': 'Ukraine'}
+PARAMS: {'q': 'Ukraine'}
+PARAMS: {'q': 'Ukraine'}
+PARAMS: {'q': 'Ukraine', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine -filter:retweets', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine Refugee -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine OR Poland -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine -war -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine -war -filter:retweets -filter:replies', 'max_id': '1667905107059527679', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': '(Ukraine war) OR (Poland -war) -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
