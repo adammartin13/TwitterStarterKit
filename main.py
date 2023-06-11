@@ -1,5 +1,6 @@
 import tweepy
 import logging
+import time
 
 logger = logging.getLogger("tweepy")
 logger.setLevel(logging.DEBUG)
@@ -65,6 +66,7 @@ tweets = [tweet for tweet in tweepy.Cursor(command,
 for tweet in tweets:
     print(tweet.text + '\n' + '-' * 100 + '\n')
 '''
+
 # Logical searches
 # Advanced operators are available to accounts with Academic Research access
 # Searching for results with 'Ukraine' AND 'Refugee' is default via space-separated variables
@@ -116,3 +118,45 @@ tweets = [tweet for tweet in tweepy.Cursor(command,
 for tweet in tweets:
     print(tweet.text + '\n' + '-' * 100 + '\n')
 '''
+
+# Looping
+# The below code will generate a tweet containing "Ukraine" ten seconds
+'''
+def get_tweets():
+    count = 1  # rate limit = 15
+    command = api.search_tweets
+    query = "Ukraine -filter:retweets -filter:replies"
+    tweets = [tweet for tweet in tweepy.Cursor(command,
+                                               q=query,
+                                               result_type='recent',
+                                               count=count).items(count)]
+    for tweet in tweets:
+        print(tweet.text + '\n' + '-' * 100 + '\n')
+
+    time.sleep(10)
+    get_tweets()
+
+
+get_tweets()
+'''
+
+# The below code will store the last tweet ID queried and ensure that all new tweets are newer than it.
+
+
+def get_tweets(lastID):
+    count = 3  # rate limit = 15
+    command = api.search_tweets
+    query = "Ukraine -filter:retweets -filter:replies"
+    tweets = [tweet for tweet in tweepy.Cursor(command,
+                                               q=query,
+                                               result_type='recent',
+                                               since_id=lastID,
+                                               count=count).items(count)]
+    for tweet in tweets:
+        print(tweet.text + '\n' + '-' * 100 + '\n')
+
+    time.sleep(10)  # seconds
+    get_tweets(tweets[count-1].id)  # Recursively call function /w last tracked ID
+
+
+get_tweets(0)  # Initiate function call
