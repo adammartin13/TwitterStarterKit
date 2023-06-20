@@ -14,3 +14,18 @@ PARAMS: {'q': 'Ukraine OR Poland -filter:retweets -filter:replies', 'result_type
 PARAMS: {'q': 'Ukraine -war -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
 PARAMS: {'q': 'Ukraine -war -filter:retweets -filter:replies', 'max_id': '1667905107059527679', 'result_type': 'recent', 'count': '5'}
 PARAMS: {'q': '(Ukraine war) OR (Poland -war) -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '5'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '1'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '1'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '1'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '1'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'count': '1'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'since_id': '0', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'since_id': '1667916201698246658', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'since_id': '0', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'since_id': '0', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'since_id': '0', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'max_id': '1670843948888211465', 'result_type': 'recent', 'since_id': '0', 'count': '3'}
+PARAMS: {'q': 'Ukraine -filter:retweets -filter:replies', 'result_type': 'recent', 'since_id': '0', 'count': '3'}

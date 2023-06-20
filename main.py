@@ -8,10 +8,10 @@ handler = logging.FileHandler(filename="tweepy.log")
 logger.addHandler(handler)
 
 auth = tweepy.OAuth1UserHandler(
-    consumer_key='dB5olcSqt4kFs8PWBOjewSeHH',
-    consumer_secret='ANXUAZdWwIZ52227d39d5fjZGopQ46XwWGehG0MQsmefRa2Xpq',
-    access_token='756634151642595329-lytDEE7J08OSWlsbWbS7IQpnQbqaAQi',
-    access_token_secret='bl1Fb549QrXVhjlBkCI9EtPixdeLEnPzwBJpP8unaKJyr'
+    consumer_key='',
+    consumer_secret='',
+    access_token='',
+    access_token_secret=''
 )
 api = tweepy.API(auth)
 
@@ -155,6 +155,7 @@ def get_tweets(lastID):
     for tweet in tweets:
         print(tweet.text + '\n' + '-' * 100 + '\n')
 
+    print(tweets[count - 1].id)
     time.sleep(10)  # seconds
     get_tweets(tweets[count-1].id)  # Recursively call function /w last tracked ID
 
